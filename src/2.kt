@@ -1,5 +1,9 @@
 fun main() {
-    while(true){
-        if (readln().toInt() == (1..9).random()) break else println("Не угадал!")
+    var a = readln().toInt()
+    var b = (1..9).random()
+    while(a != b){
+        print("Не угадал!")
+        a = readln().toInt()
+        b = (1..9).random()
     }
 }
